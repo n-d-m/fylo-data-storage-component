@@ -147,3 +147,48 @@ progress {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* --- MEDIA QUERIES --- */
+
+@media screen and (min-width: 1423px) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  .storage {
+    height: 150px;
+    align-self: flex-end;
+    justify-content: center;
+  }
+
+  .amt-left {
+    bottom: 120px;
+    right: 50px;
+  }
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+  }
+}
